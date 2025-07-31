@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cadastro de Aluno</title>
+  <style>
+    /* (Mesmo estilo do original) */
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      width: 400px;
+      max-width: 90vw;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 8px 10px;
+      margin-bottom: 20px;
+      border: 1.5px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+      transition: border-color 0.3s ease;
+    }
+
+    input[type="text"]:focus {
+      border-color: #3f51b5;
+      outline: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #3f51b5;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #303f9f;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Cadastro de Aluno</h2>
+    <form>
+      <label for="nomeAluno">Nome do Aluno</label>
+      <input type="text" id="nomeAluno" name="nomeAluno" placeholder="Digite o nome do aluno" required />
+
+      <label for="matricula">Matrícula</label>
+      <input type="text" id="matricula" name="matricula" placeholder="Número da matrícula" required />
+
+      <label for="serie">Série / Ano</label>
+      <input type="text" id="serie" name="serie" placeholder="Ex: 8º ano" required />
+
+      <label for="curso">Curso</label>
+      <input type="text" id="curso" name="curso" placeholder="Ex: A" required />
+
+      <button type="submit">Cadastrar Aluno</button>
+    </form>
+  </div>
+
+</body>
+</html>
